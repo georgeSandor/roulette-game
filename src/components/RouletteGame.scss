@@ -1,0 +1,73 @@
+.roulette-container {
+    text-align: center;
+    margin-top: 50px;
+    .player-money {
+        color: #095F17;
+        font-size: 18px;
+    }
+    .number-board {
+        margin-bottom: 20px;
+        button {
+            padding: 10px;
+            margin: 5px;
+            background-color: #FFFFFF;
+            border-color: #000000;
+            cursor: pointer;
+      
+            &.selected {
+              background-color: green;
+            }
+      
+            &.disabled {
+              cursor: not-allowed;
+            }
+          }
+    }
+    .bet-amounts {
+        margin-bottom: 20px;
+        p {
+            margin-bottom: 10px;
+          } 
+        button {
+        padding: 10px 20px;
+        margin: 5px;
+        background-color: #FFFFFF;
+        border-color: #000000;
+        cursor: pointer;
+    
+        &.selected {
+            background-color: blue;
+            color: #FFFFFF;
+        }
+    
+        &.disabled {
+            cursor: not-allowed;
+        }
+        }
+    }
+    .action-buttons {
+        margin-bottom: 20px;
+    
+        button {
+          padding: 10px 20px;
+          cursor: pointer;
+          margin-right: 10px;
+        }
+      }
+    .message-container {
+        margin-top: 20px;
+        font-size: 20px;
+        .message-body {
+            display: flex;
+            flex-direction: column;
+            .roulette-img {
+                display: flex;
+                align-self: center;
+            }
+        }
+    }
+    .game-over {
+        color: red;
+        font-weight: bold;
+      }
+}
