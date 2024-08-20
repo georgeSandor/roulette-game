@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
+Roulette Casino Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Roulette Casino Game, a simple and interactive roulette game built with React and TypeScript. In this game, players can place bets on numbers, and the roulette will spin to determine if the player wins or loses. The game includes a betting system with various bet amounts and tracks the player's money.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Interactive Roulette Board: Players can select a number between 1 and 36.
+Betting System: Players can place bets of $5, $10, $25, $50, or $100.
+Money Management: The player starts with $1000. Bets are subtracted from the total, and winnings are added.
+Win or Lose: The roulette spins, and if the selected number matches the result, the player wins double their bet.
+Game Over: If the player's money reaches $0, the game ends, and no further bets can be placed.
+Reset Game: Players can reset the game at any time to start fresh.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Installation and Setup
 
-- Configure the top-level `parserOptions` property like this:
+Prerequisites
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Node.js: Ensure you have Node.js installed on your machine.
+npm or Yarn: Package manager to install dependencies.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Steps to Install
+Clone the Repository:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+git clone https://github.com/georgeSandor/roulette-game.git
+Navigate to the Project Directory:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+cd roulette-game
+
+Install Dependencies:
+npm install
+
+Run the Development Server:
+npm run dev
